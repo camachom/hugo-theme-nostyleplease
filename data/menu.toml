@@ -8,10 +8,6 @@ title = "info"
   title = "resume"
   url = "files/martin-camacho-resume.pdf"
 
-  [[entries.entries]]
-  title = "github"
-  url = "https://github.com/camachom"
-
 
 [[entries]]
 title = "posts"
