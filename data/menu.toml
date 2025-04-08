@@ -6,7 +6,7 @@ title = "info"
 
   [[entries.entries]]
   title = "resume"
-  url = "files/martin-camacho-resume.pdf"
+  url = "/files/martin-camacho-resume.pdf"
 
 
 [[entries]]
