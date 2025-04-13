@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode }}">
     {{- partial "head.html" . -}}
+    {{ $script := resources.Get "js/theme-toggle.js" | minify }}
+    <script defer src="{{ $script.RelPermalink }}"></script>
     <body a="{{ $.Site.Params.theme_config.appearance | default "auto" }}">
         <main class="page-content" aria-label="Content">
             <div class="w">
+                <button id="theme-toggle"
+                    aria-label="Toggle theme"
+                    style="all: unset; cursor: pointer; position: fixed; top: 1rem; right: 1rem; font-size: 1.2rem;">
+                    🌓
+                </button>
+
                 {{- block "main" . }}{{- end }}
                 {{ partial "footer.html" }}
             </div>
